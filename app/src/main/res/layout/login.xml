@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#ffa2d1ff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="        登陆"
+            android:gravity="center"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_weight="9.2"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+                <TextView android:text="用户名" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:id="@+id/uname"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+                <TextView android:text="密    码" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:id="@+id/upwd"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:id="@+id/login"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/loginProgress"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

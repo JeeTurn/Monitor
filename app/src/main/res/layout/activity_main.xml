@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.monitor.MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用作摄像头"
+        android:id="@+id/shexiangtouButton"
+        android:layout_above="@+id/jiankongButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="监控指定摄像头"
+        android:id="@+id/jiankongButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/fileButton"
+        android:layout_alignStart="@+id/fileButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看记录数据"
+        android:id="@+id/fileButton"
+        android:layout_below="@+id/jiankongButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登出"
+        android:id="@+id/logoutButton"
+        android:layout_below="@+id/fileButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
